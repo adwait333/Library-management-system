@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haneetarya.librarymanagementsystem.Homepage">
+   <children>
+      <RadioButton fx:id="issue" layoutX="212.0" layoutY="274.0" mnemonicParsing="false" prefHeight="40.0" text="Issue Book">
+         <font>
+            <Font size="24.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="submit" layoutX="391.0" layoutY="272.0" mnemonicParsing="false" prefHeight="40.0" text="Submit Book">
+         <font>
+            <Font size="24.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="addStudent" layoutX="569.0" layoutY="268.0" mnemonicParsing="false" prefHeight="40.0" text="Add Student">
+         <font>
+            <Font size="24.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="addBook" layoutX="774.0" layoutY="267.0" mnemonicParsing="false" prefHeight="40.0" text="Add Book">
+         <font>
+            <Font size="24.0" />
+         </font></RadioButton>
+      <Button fx:id="go" layoutX="514.0" layoutY="369.0" mnemonicParsing="false" onAction="#submit" prefHeight="45.0" prefWidth="131.0" text="Go">
+         <font>
+            <Font size="34.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="-3.0" prefHeight="164.0" prefWidth="1083.0" style="-fx-background-color: #b4826b;" text="Choose the Option below" textFill="blue">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="logout" layoutX="803.0" layoutY="616.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="181.0" text="Log Out">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="11.0" layoutY="524.0" prefHeight="40.0" prefWidth="445.0">
+        <buttons>
+          <Button fx:id="studentList" mnemonicParsing="false" onAction="#getStudentList" text="Student List">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="booklist" mnemonicParsing="false" onAction="#getBookList" text="Book List">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="borrowlist" mnemonicParsing="false" onAction="#getBorrowList" text="Borrow List">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
